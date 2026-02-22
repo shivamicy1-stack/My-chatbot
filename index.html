@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot </title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Jessica Cowles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <!-- Main Chat Container -->
+        <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="header-left">
+                    <div class="agent-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Jessica+Cowles&background=4f46e5&color=fff&size=128" alt="Jessica Cowles">
+                    </div>
+                    <div class="agent-info">
+                        <h2>Chat with <span class="agent-name">Your Chatbot</span></h2>
+                        <p class="response-time"><i class="fas fa-clock"></i> </p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="header-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <!-- Chat Messages Area -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Message -->
+                <div class="message welcome-message">
+                    <div class="message-bubble">
+                        
+                    </div>
+                </div>
+
+                <!-- User Message Example -->
+                <div class="message user-message">
+                    <div class="message-bubble">
+                        
+                    </div>
+                </div>
+
+                <!-- Bot Response with Quick Reply Buttons -->
+                <div class="message bot-message">
+                    <div class="message-bubble">
+                        <div class="message-sender">📦 Shipping Information</div>
+                        <div class="message-text">Sure! Which region are you interested in?</div>
+                        <div class="quick-replies">
+                            <button class="quick-reply-btn" data-region="eu">
+                                <i class="fas fa-globe-europe"></i> Shipping rates to EU countries
+                            </button>
+                            <button class="quick-reply-btn" data-region="usa">
+                                <i class="fas fa-globe-americas"></i> Shipping rates to USA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bot Response with Shipping Info -->
+                <div class="message bot-message" id="shippingInfoMessage" style="display: none;">
+                    <div class="message-bubble">
+                        <div class="message-sender">📬 Shipping Details</div>
+                        <div class="message-text" id="shippingInfoText">
+                            Hey 👩‍💻 $5 standard shipping in the contiguous USA on orders under $50
+                        </div>
+                        
+                        <!-- Feedback Section -->
+                        <div class="feedback-section">
+                            <span class="feedback-label">Was this helpful?</span>
+                            <div class="feedback-buttons">
+                                <button class="feedback-btn" data-feedback="yes">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <span class="feedback-count" id="yesCount">16</span>
+                                </button>
+                                <button class="feedback-btn" data-feedback="no">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span class="feedback-count" id="noCount">1</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Info Bar -->
+            <div class="company-bar">
+                <div class="company-info">
+                    <i class="fas fa-store"></i>
+                    <span>Chatbot/company name</span>
+                </div>
+                <div class="quick-response-tip">
+                    <i class="fas fa-bolt"></i>
+                    <span>Quick response buttons</span>
+                </div>
+            </div>
+
+            <!-- Chat Input Area -->
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <button class="attach-btn">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <input type="text" id="messageInput" placeholder="Enter your message..." autocomplete="off">
+                    <button class="emoji-btn">
+                        <i class="far fa-smile"></i>
+                    </button>
+                    <button class="send-btn" id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Powered By Footer -->
+            <div class="powered-by">
+                <span>POWERED BY</span>
+                <img src="https://www.tidio.com/assets/img/logo.png" alt="TIDIO" class="tidio-logo">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
